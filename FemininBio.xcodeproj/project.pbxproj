@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40C4B9C72076760600694310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C62076760600694310 /* AppDelegate.swift */; };
+		40C4B9C92076760600694310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C82076760600694310 /* ViewController.swift */; };
+		40C4B9CC2076760600694310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CA2076760600694310 /* Main.storyboard */; };
+		40C4B9CE2076760600694310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CD2076760600694310 /* Assets.xcassets */; };
+		40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CF2076760700694310 /* LaunchScreen.storyboard */; };
+		40C4B9DC2076760700694310 /* FemininBioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9DB2076760700694310 /* FemininBioTests.swift */; };
+		40C4B9E72076760700694310 /* FemininBioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9E62076760700694310 /* FemininBioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40C4B9D82076760700694310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C4B9BB2076760600694310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C4B9C22076760600694310;
+			remoteInfo = FemininBio;
+		};
+		40C4B9E32076760700694310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C4B9BB2076760600694310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C4B9C22076760600694310;
+			remoteInfo = FemininBio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40C4B9C32076760600694310 /* FemininBio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemininBio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4B9C62076760600694310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40C4B9C82076760600694310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40C4B9CB2076760600694310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40C4B9CD2076760600694310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C4B9D02076760700694310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40C4B9D22076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C4B9D72076760700694310 /* FemininBioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FemininBioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4B9DB2076760700694310 /* FemininBioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemininBioTests.swift; sourceTree = "<group>"; };
+		40C4B9DD2076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C4B9E22076760700694310 /* FemininBioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FemininBioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C4B9E62076760700694310 /* FemininBioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemininBioUITests.swift; sourceTree = "<group>"; };
+		40C4B9E82076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40C4B9C02076760600694310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9D42076760700694310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9DF2076760700694310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40C4B9BA2076760600694310 = {
+			isa = PBXGroup;
+			children = (
+				40C4B9C52076760600694310 /* FemininBio */,
+				40C4B9DA2076760700694310 /* FemininBioTests */,
+				40C4B9E52076760700694310 /* FemininBioUITests */,
+				40C4B9C42076760600694310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40C4B9C42076760600694310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9C32076760600694310 /* FemininBio.app */,
+				40C4B9D72076760700694310 /* FemininBioTests.xctest */,
+				40C4B9E22076760700694310 /* FemininBioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40C4B9C52076760600694310 /* FemininBio */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9C62076760600694310 /* AppDelegate.swift */,
+				40C4B9C82076760600694310 /* ViewController.swift */,
+				40C4B9CA2076760600694310 /* Main.storyboard */,
+				40C4B9CD2076760600694310 /* Assets.xcassets */,
+				40C4B9CF2076760700694310 /* LaunchScreen.storyboard */,
+				40C4B9D22076760700694310 /* Info.plist */,
+			);
+			path = FemininBio;
+			sourceTree = "<group>";
+		};
+		40C4B9DA2076760700694310 /* FemininBioTests */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9DB2076760700694310 /* FemininBioTests.swift */,
+				40C4B9DD2076760700694310 /* Info.plist */,
+			);
+			path = FemininBioTests;
+			sourceTree = "<group>";
+		};
+		40C4B9E52076760700694310 /* FemininBioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9E62076760700694310 /* FemininBioUITests.swift */,
+				40C4B9E82076760700694310 /* Info.plist */,
+			);
+			path = FemininBioUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40C4B9C22076760600694310 /* FemininBio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4B9EB2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBio" */;
+			buildPhases = (
+				40C4B9BF2076760600694310 /* Sources */,
+				40C4B9C02076760600694310 /* Frameworks */,
+				40C4B9C12076760600694310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FemininBio;
+			productName = FemininBio;
+			productReference = 40C4B9C32076760600694310 /* FemininBio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40C4B9D62076760700694310 /* FemininBioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4B9EE2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioTests" */;
+			buildPhases = (
+				40C4B9D32076760700694310 /* Sources */,
+				40C4B9D42076760700694310 /* Frameworks */,
+				40C4B9D52076760700694310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C4B9D92076760700694310 /* PBXTargetDependency */,
+			);
+			name = FemininBioTests;
+			productName = FemininBioTests;
+			productReference = 40C4B9D72076760700694310 /* FemininBioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40C4B9E12076760700694310 /* FemininBioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C4B9F12076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioUITests" */;
+			buildPhases = (
+				40C4B9DE2076760700694310 /* Sources */,
+				40C4B9DF2076760700694310 /* Frameworks */,
+				40C4B9E02076760700694310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C4B9E42076760700694310 /* PBXTargetDependency */,
+			);
+			name = FemininBioUITests;
+			productName = FemininBioUITests;
+			productReference = 40C4B9E22076760700694310 /* FemininBioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40C4B9BB2076760600694310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mouna EL AMRI";
+				TargetAttributes = {
+					40C4B9C22076760600694310 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					40C4B9D62076760700694310 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40C4B9C22076760600694310;
+					};
+					40C4B9E12076760700694310 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 40C4B9C22076760600694310;
+					};
+				};
+			};
+			buildConfigurationList = 40C4B9BE2076760600694310 /* Build configuration list for PBXProject "FemininBio" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40C4B9BA2076760600694310;
+			productRefGroup = 40C4B9C42076760600694310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40C4B9C22076760600694310 /* FemininBio */,
+				40C4B9D62076760700694310 /* FemininBioTests */,
+				40C4B9E12076760700694310 /* FemininBioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40C4B9C12076760600694310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */,
+				40C4B9CE2076760600694310 /* Assets.xcassets in Resources */,
+				40C4B9CC2076760600694310 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9D52076760700694310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9E02076760700694310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40C4B9BF2076760600694310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4B9C92076760600694310 /* ViewController.swift in Sources */,
+				40C4B9C72076760600694310 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9D32076760700694310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4B9DC2076760700694310 /* FemininBioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C4B9DE2076760700694310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C4B9E72076760700694310 /* FemininBioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40C4B9D92076760700694310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C4B9C22076760600694310 /* FemininBio */;
+			targetProxy = 40C4B9D82076760700694310 /* PBXContainerItemProxy */;
+		};
+		40C4B9E42076760700694310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C4B9C22076760600694310 /* FemininBio */;
+			targetProxy = 40C4B9E32076760700694310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40C4B9CA2076760600694310 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C4B9CB2076760600694310 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40C4B9CF2076760700694310 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C4B9D02076760700694310 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40C4B9E92076760700694310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40C4B9EA2076760700694310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40C4B9EC2076760700694310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40C4B9ED2076760700694310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40C4B9EF2076760700694310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FemininBio.app/FemininBio";
+			};
+			name = Debug;
+		};
+		40C4B9F02076760700694310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FemininBio.app/FemininBio";
+			};
+			name = Release;
+		};
+		40C4B9F22076760700694310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FemininBio;
+			};
+			name = Debug;
+		};
+		40C4B9F32076760700694310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRKP8L725F;
+				INFOPLIST_FILE = FemininBioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.idix.FemininBioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FemininBio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40C4B9BE2076760600694310 /* Build configuration list for PBXProject "FemininBio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4B9E92076760700694310 /* Debug */,
+				40C4B9EA2076760700694310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4B9EB2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4B9EC2076760700694310 /* Debug */,
+				40C4B9ED2076760700694310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4B9EE2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4B9EF2076760700694310 /* Debug */,
+				40C4B9F02076760700694310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C4B9F12076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C4B9F22076760700694310 /* Debug */,
+				40C4B9F32076760700694310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40C4B9BB2076760600694310 /* Project object */;
+}
