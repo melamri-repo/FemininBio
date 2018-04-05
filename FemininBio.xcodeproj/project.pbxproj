@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A5BEDBA7747109B12F883E /* Pods_FemininBioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64DB2E0FAD0BE5124EED253 /* Pods_FemininBioTests.framework */; };
 		40C4B9C72076760600694310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C62076760600694310 /* AppDelegate.swift */; };
 		40C4B9C92076760600694310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C82076760600694310 /* ViewController.swift */; };
 		40C4B9CC2076760600694310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CA2076760600694310 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CF2076760700694310 /* LaunchScreen.storyboard */; };
 		40C4B9DC2076760700694310 /* FemininBioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9DB2076760700694310 /* FemininBioTests.swift */; };
 		40C4B9E72076760700694310 /* FemininBioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9E62076760700694310 /* FemininBioUITests.swift */; };
+		48993D72965265718A573ACA /* Pods_FemininBioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */; };
+		D23A8643234DDEAE7D536333 /* Pods_FemininBio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09441E7628C64B7E0B0BEB0F /* Pods-FemininBio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBio.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBio/Pods-FemininBio.release.xcconfig"; sourceTree = "<group>"; };
+		1580DE38ACB8BCD50A31CFF6 /* Pods-FemininBioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40C4B9C32076760600694310 /* FemininBio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemininBio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C4B9C62076760600694310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C4B9C82076760600694310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 		40C4B9E22076760700694310 /* FemininBioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FemininBioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C4B9E62076760700694310 /* FemininBioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemininBioUITests.swift; sourceTree = "<group>"; };
 		40C4B9E82076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64DB2E0FAD0BE5124EED253 /* Pods_FemininBioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE7EC0EA596BBA09041AC4 /* Pods-FemininBioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA8AFF69CDC8B6AB28BAE32F /* Pods-FemininBio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBio/Pods-FemininBio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23A8643234DDEAE7D536333 /* Pods_FemininBio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A5BEDBA7747109B12F883E /* Pods_FemininBioTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48993D72965265718A573ACA /* Pods_FemininBioUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				40C4B9DA2076760700694310 /* FemininBioTests */,
 				40C4B9E52076760700694310 /* FemininBioUITests */,
 				40C4B9C42076760600694310 /* Products */,
+				7F74E47B366B29BF8BA70A98 /* Pods */,
+				9A7151F8B71DD631D196351B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = FemininBioUITests;
 			sourceTree = "<group>";
 		};
+		7F74E47B366B29BF8BA70A98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AFF69CDC8B6AB28BAE32F /* Pods-FemininBio.debug.xcconfig */,
+				09441E7628C64B7E0B0BEB0F /* Pods-FemininBio.release.xcconfig */,
+				49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */,
+				CFEE7EC0EA596BBA09041AC4 /* Pods-FemininBioTests.release.xcconfig */,
+				1580DE38ACB8BCD50A31CFF6 /* Pods-FemininBioUITests.debug.xcconfig */,
+				7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A7151F8B71DD631D196351B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */,
+				C64DB2E0FAD0BE5124EED253 /* Pods_FemininBioTests.framework */,
+				6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40C4B9EB2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBio" */;
 			buildPhases = (
+				695440C6728F365EE6D1DBFE /* [CP] Check Pods Manifest.lock */,
 				40C4B9BF2076760600694310 /* Sources */,
 				40C4B9C02076760600694310 /* Frameworks */,
 				40C4B9C12076760600694310 /* Resources */,
+				04FD67627C70DC8608DB5F88 /* [CP] Embed Pods Frameworks */,
+				FA193377A5456EB4F534FDBF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40C4B9EE2076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioTests" */;
 			buildPhases = (
+				D0ABB726F48F5504FE6E6BA4 /* [CP] Check Pods Manifest.lock */,
 				40C4B9D32076760700694310 /* Sources */,
 				40C4B9D42076760700694310 /* Frameworks */,
 				40C4B9D52076760700694310 /* Resources */,
+				4D841F0280B9546E8A42327C /* [CP] Embed Pods Frameworks */,
+				C84801AB723DE292A5A2904C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40C4B9F12076760700694310 /* Build configuration list for PBXNativeTarget "FemininBioUITests" */;
 			buildPhases = (
+				79D04FAF2768D7FD6587D18D /* [CP] Check Pods Manifest.lock */,
 				40C4B9DE2076760700694310 /* Sources */,
 				40C4B9DF2076760700694310 /* Frameworks */,
 				40C4B9E02076760700694310 /* Resources */,
+				668030DE9C553776330C75A3 /* [CP] Embed Pods Frameworks */,
+				0A677ED05181C5A31AB76864 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FD67627C70DC8608DB5F88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FemininBio/Pods-FemininBio-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBio/Pods-FemininBio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A677ED05181C5A31AB76864 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D841F0280B9546E8A42327C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		668030DE9C553776330C75A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		695440C6728F365EE6D1DBFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FemininBio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D04FAF2768D7FD6587D18D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FemininBioUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84801AB723DE292A5A2904C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0ABB726F48F5504FE6E6BA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FemininBioTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA193377A5456EB4F534FDBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FemininBio/Pods-FemininBio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40C4B9BF2076760600694310 /* Sources */ = {
@@ -424,6 +629,7 @@
 		};
 		40C4B9EC2076760700694310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA8AFF69CDC8B6AB28BAE32F /* Pods-FemininBio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +645,7 @@
 		};
 		40C4B9ED2076760700694310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09441E7628C64B7E0B0BEB0F /* Pods-FemininBio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +661,7 @@
 		};
 		40C4B9EF2076760700694310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +679,7 @@
 		};
 		40C4B9F02076760700694310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEE7EC0EA596BBA09041AC4 /* Pods-FemininBioTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +697,7 @@
 		};
 		40C4B9F22076760700694310 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1580DE38ACB8BCD50A31CFF6 /* Pods-FemininBioUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +714,7 @@
 		};
 		40C4B9F32076760700694310 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
