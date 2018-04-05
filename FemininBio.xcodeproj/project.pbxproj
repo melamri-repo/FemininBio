@@ -17,6 +17,8 @@
 		40C4B9E72076760700694310 /* FemininBioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9E62076760700694310 /* FemininBioUITests.swift */; };
 		40C4B9FE2076799D00694310 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9FD2076799D00694310 /* Configuration.plist */; };
 		40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */; };
+		40C4BA0220767BAF00694310 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */; };
+		40C4BA0420767C3400694310 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA0320767C3400694310 /* ArticleModel.swift */; };
 		48993D72965265718A573ACA /* Pods_FemininBioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */; };
 		D23A8643234DDEAE7D536333 /* Pods_FemininBio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		40C4B9E82076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C4B9FD2076799D00694310 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsModel.swift; sourceTree = "<group>"; };
+		40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
+		40C4BA0320767C3400694310 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */,
+				40C4BA0320767C3400694310 /* ArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		40C4B9F6207678BF00694310 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -527,6 +533,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C4BA0220767BAF00694310 /* ConfigurationHelper.swift in Sources */,
+				40C4BA0420767C3400694310 /* ArticleModel.swift in Sources */,
 				40C4B9C92076760600694310 /* ViewController.swift in Sources */,
 				40C4B9C72076760600694310 /* AppDelegate.swift in Sources */,
 				40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */,
