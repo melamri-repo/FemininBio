@@ -15,6 +15,8 @@
 		40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CF2076760700694310 /* LaunchScreen.storyboard */; };
 		40C4B9DC2076760700694310 /* FemininBioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9DB2076760700694310 /* FemininBioTests.swift */; };
 		40C4B9E72076760700694310 /* FemininBioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9E62076760700694310 /* FemininBioUITests.swift */; };
+		40C4B9FE2076799D00694310 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9FD2076799D00694310 /* Configuration.plist */; };
+		40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */; };
 		48993D72965265718A573ACA /* Pods_FemininBioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */; };
 		D23A8643234DDEAE7D536333 /* Pods_FemininBio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,8 @@
 		40C4B9E22076760700694310 /* FemininBioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FemininBioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C4B9E62076760700694310 /* FemininBioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemininBioUITests.swift; sourceTree = "<group>"; };
 		40C4B9E82076760700694310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C4B9FD2076799D00694310 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsModel.swift; sourceTree = "<group>"; };
 		49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,10 +119,11 @@
 			isa = PBXGroup;
 			children = (
 				40C4B9C62076760600694310 /* AppDelegate.swift */,
+				40C4B9FA2076792600694310 /* Ressources */,
+				40C4B9F8207678F200694310 /* Classes */,
+				40C4B9F7207678C800694310 /* Configuration */,
 				40C4B9C82076760600694310 /* ViewController.swift */,
 				40C4B9CA2076760600694310 /* Main.storyboard */,
-				40C4B9CD2076760600694310 /* Assets.xcassets */,
-				40C4B9CF2076760700694310 /* LaunchScreen.storyboard */,
 				40C4B9D22076760700694310 /* Info.plist */,
 			);
 			path = FemininBio;
@@ -140,6 +145,63 @@
 				40C4B9E82076760700694310 /* Info.plist */,
 			);
 			path = FemininBioUITests;
+			sourceTree = "<group>";
+		};
+		40C4B9F4207678AC00694310 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40C4B9F5207678B500694310 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		40C4B9F6207678BF00694310 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		40C4B9F7207678C800694310 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9FD2076799D00694310 /* Configuration.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		40C4B9F8207678F200694310 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9F92076791B00694310 /* New Group */,
+				40C4B9F6207678BF00694310 /* Helper */,
+				40C4B9F5207678B500694310 /* Client */,
+				40C4B9F4207678AC00694310 /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		40C4B9F92076791B00694310 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		40C4B9FA2076792600694310 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				40C4B9CD2076760600694310 /* Assets.xcassets */,
+				40C4B9CF2076760700694310 /* LaunchScreen.storyboard */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 		7F74E47B366B29BF8BA70A98 /* Pods */ = {
@@ -282,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */,
+				40C4B9FE2076799D00694310 /* Configuration.plist in Resources */,
 				40C4B9CE2076760600694310 /* Assets.xcassets in Resources */,
 				40C4B9CC2076760600694310 /* Main.storyboard in Resources */,
 			);
@@ -466,6 +529,7 @@
 			files = (
 				40C4B9C92076760600694310 /* ViewController.swift in Sources */,
 				40C4B9C72076760600694310 /* AppDelegate.swift in Sources */,
+				40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

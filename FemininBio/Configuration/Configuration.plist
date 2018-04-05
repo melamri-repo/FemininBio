@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>listeArticleURL</key>
+	<string>https://www.femininbio.com/json/liste-articles</string>
+	<key>articleURL</key>
+	<string>http://www.femininbio.com/json/liste-articles/{page}</string>
+	<key>articleDetailsURL</key>
+	<string>https://www.femininbio.com/json/article/{id}</string>
+</dict>
+</plist>
