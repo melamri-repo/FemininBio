@@ -9,6 +9,8 @@
 import Foundation
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ArticleListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -17,9 +19,7 @@ class ArticleListViewController: UIViewController, UITableViewDelegate {
     private let tableViewRefreshControl = UIRefreshControl()
     // MARK: -Rx Variables
     var disposeBag = DisposeBag()
-    var velibs: BehaviorRelay<[VelibModel]> = BehaviorRelay(value: [VelibModel]())
     var isSuccess: BehaviorRelay<(Bool,String)> = BehaviorRelay(value: (false,""))
-    var filtredStands: BehaviorRelay<[VelibModel]> = BehaviorRelay(value: [VelibModel]())
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,7 +34,7 @@ class ArticleListViewController: UIViewController, UITableViewDelegate {
         self.tableViewRefreshControl.addTarget(self, action: #selector(refreshList), for: .valueChanged)
         self.tableView.refreshControl = self.tableViewRefreshControl
         // Register cell
-        self.table.register(UINib(nibName: "", bundle: nil), forCellReuseIdentifier: "")
+        self.tableView.register(UINib(nibName: "", bundle: nil), forCellReuseIdentifier: "")
         // Set Rx delegate
         self.tableView
             .rx.setDelegate(self)
