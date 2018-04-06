@@ -19,6 +19,10 @@
 		40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */; };
 		40C4BA0220767BAF00694310 /* ConfigurationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */; };
 		40C4BA0420767C3400694310 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA0320767C3400694310 /* ArticleModel.swift */; };
+		40C4BA062077661000694310 /* AuteurModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA052077661000694310 /* AuteurModel.swift */; };
+		40C4BA082077672200694310 /* RubriqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA072077672200694310 /* RubriqueModel.swift */; };
+		40C4BA0A2077680300694310 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA092077680300694310 /* ImageModel.swift */; };
+		40C4BA0C20776EBA00694310 /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4BA0B20776EBA00694310 /* GlobalHelper.swift */; };
 		48993D72965265718A573ACA /* Pods_FemininBioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */; };
 		D23A8643234DDEAE7D536333 /* Pods_FemininBio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B07652D0B1B4673FF9DDF6 /* Pods_FemininBio.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +64,10 @@
 		40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsModel.swift; sourceTree = "<group>"; };
 		40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHelper.swift; sourceTree = "<group>"; };
 		40C4BA0320767C3400694310 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		40C4BA052077661000694310 /* AuteurModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurModel.swift; sourceTree = "<group>"; };
+		40C4BA072077672200694310 /* RubriqueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubriqueModel.swift; sourceTree = "<group>"; };
+		40C4BA092077680300694310 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		40C4BA0B20776EBA00694310 /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
 		49309B915BF4AFE90F0318E4 /* Pods-FemininBioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioTests/Pods-FemininBioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2617E997E352373769EA4C /* Pods_FemininBioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FemininBioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F69F4B7E6F9ECBA8D0AFF5F /* Pods-FemininBioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FemininBioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FemininBioUITests/Pods-FemininBioUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +164,9 @@
 			children = (
 				40C4B9FF20767ABC00694310 /* ArticleDetailsModel.swift */,
 				40C4BA0320767C3400694310 /* ArticleModel.swift */,
+				40C4BA052077661000694310 /* AuteurModel.swift */,
+				40C4BA072077672200694310 /* RubriqueModel.swift */,
+				40C4BA092077680300694310 /* ImageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				40C4BA0120767BAF00694310 /* ConfigurationHelper.swift */,
+				40C4BA0B20776EBA00694310 /* GlobalHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -536,8 +548,12 @@
 				40C4BA0220767BAF00694310 /* ConfigurationHelper.swift in Sources */,
 				40C4BA0420767C3400694310 /* ArticleModel.swift in Sources */,
 				40C4B9C92076760600694310 /* ViewController.swift in Sources */,
+				40C4BA0C20776EBA00694310 /* GlobalHelper.swift in Sources */,
+				40C4BA082077672200694310 /* RubriqueModel.swift in Sources */,
 				40C4B9C72076760600694310 /* AppDelegate.swift in Sources */,
 				40C4BA0020767ABC00694310 /* ArticleDetailsModel.swift in Sources */,
+				40C4BA062077661000694310 /* AuteurModel.swift in Sources */,
+				40C4BA0A2077680300694310 /* ImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
