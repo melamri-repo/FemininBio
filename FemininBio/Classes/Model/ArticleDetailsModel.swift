@@ -8,7 +8,7 @@
 
 import Foundation
 struct ArticleDetailsModel: Codable {
-    var idArticle: String?
+    var idArticle: Int?
     var dateArticle: Int?
     var surTitre: String?
     var titre: String?
@@ -20,7 +20,7 @@ struct ArticleDetailsModel: Codable {
     var corpsArticle: String?
     var image: ImageModel?
     var articleLies: [ArticleModel]?
-    var theme: String?
+    var theme: [ThemeModel]?
     /// CodingKeys
     enum CodingKeys: String, CodingKey {
         case idArticle = "id"
@@ -37,13 +37,16 @@ struct ArticleDetailsModel: Codable {
         case articleLies = "al"
         case theme = "th"
     }
+    init() {
+
+    }
     /// init from decoder
     ///
     /// - Parameter decoder: Decoder
     /// - Throws: error
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        idArticle = try values.decodeIfPresent(String.self, forKey: .idArticle)
+        idArticle = try values.decodeIfPresent(Int.self, forKey: .idArticle)
         dateArticle = try values.decodeIfPresent(Int.self, forKey: .dateArticle)
         surTitre = try values.decodeIfPresent(String.self, forKey: .surTitre)
         titre = try values.decodeIfPresent(String.self, forKey: .titre)
@@ -55,7 +58,7 @@ struct ArticleDetailsModel: Codable {
         corpsArticle = try values.decodeIfPresent(String.self, forKey: .corpsArticle)
         image = try values.decodeIfPresent(ImageModel.self, forKey: .image)
         articleLies = try values.decodeIfPresent([ArticleModel].self, forKey: .articleLies)
-        theme = try values.decodeIfPresent(String.self, forKey: .theme)
+        theme = try values.decodeIfPresent([ThemeModel].self, forKey: .theme)
     }
     /// Encode
     ///

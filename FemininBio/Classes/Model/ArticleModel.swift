@@ -8,7 +8,7 @@
 
 import Foundation
 struct ArticleModel: Codable {
-    var idArticle: String?
+    var idArticle: Int?
     var dateArticle: Int?
     var surTitre: String?
     var titre: String?
@@ -47,7 +47,7 @@ struct ArticleModel: Codable {
     /// - Throws: error
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        idArticle = try values.decodeIfPresent(String.self, forKey: .idArticle)
+        idArticle = try values.decodeIfPresent(Int.self, forKey: .idArticle)
         dateArticle = try values.decodeIfPresent(Int.self, forKey: .dateArticle)
         surTitre = try values.decodeIfPresent(String.self, forKey: .surTitre)
         titre = try values.decodeIfPresent(String.self, forKey: .titre)
