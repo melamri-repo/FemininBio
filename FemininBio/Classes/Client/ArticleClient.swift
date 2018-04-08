@@ -54,8 +54,8 @@ class ArticleClient {
             isSuccess.accept((false, "TechnicalError"))
         }).disposed(by: disposeBag)
     }
-    func getArticleDetails(articleDetails: BehaviorRelay<ArticleDetailsModel>, isSuccess: BehaviorRelay<(Bool,String)>, articleId: String) {
-        let dataSource = ConfigurationHelper.getConfigForKey(key: "articleDetailsURL").replacingOccurrences(of: "{id}", with: articleId)
+    func getArticleDetails(articleDetails: BehaviorRelay<ArticleDetailsModel>, isSuccess: BehaviorRelay<(Bool,String)>, articleId: Int) {
+        let dataSource = ConfigurationHelper.getConfigForKey(key: "articleDetailsURL").replacingOccurrences(of: "{id}", with: String(articleId))
         RxAlamofire.requestData(.get, dataSource).debug().subscribe(onNext: { (response, data) in
             if 200..<300 ~= response.statusCode {
                 do {

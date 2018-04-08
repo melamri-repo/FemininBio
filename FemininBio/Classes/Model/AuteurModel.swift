@@ -2,13 +2,13 @@
 //  AuteurModel.swift
 //  FemininBio
 //
-//  Created by Mouna EL AMRI on 06/04/2018.
+//  Created by Mouna EL AMRI on 06/04/2018.Ò
 //  Copyright © 2018 Mouna EL AMRI. All rights reserved.
 //
 
 import Foundation
 struct AuteurModel: Codable {
-    var idAuteur: String?
+    var idAuteur: Int?
     var name: String?
     var url: String?
     /// CodingKeys
@@ -23,7 +23,7 @@ struct AuteurModel: Codable {
     /// - Throws: error
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        idAuteur = try values.decodeIfPresent(String.self, forKey: .idAuteur)
+        idAuteur = try values.decodeIfPresent(Int.self, forKey: .idAuteur)
         name = try values.decodeIfPresent(String.self, forKey: .name)
         url = try values.decodeIfPresent(String.self, forKey: .url)
     }
