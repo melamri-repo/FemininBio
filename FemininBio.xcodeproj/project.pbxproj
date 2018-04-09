@@ -11,6 +11,8 @@
 		1F2E0CD52079678E0027D5C3 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E0CD42079678E0027D5C3 /* ArticleTableViewCell.swift */; };
 		1F2E0CD7207967AF0027D5C3 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E0CD6207967AF0027D5C3 /* ArticleTableViewCell.xib */; };
 		1F2E0CD920797DD60027D5C3 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E0CD820797DD60027D5C3 /* ThemeModel.swift */; };
+		4038CDE6207B600A003BD29B /* ArticleTableViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4038CDE5207B600A003BD29B /* ArticleTableViewFooter.xib */; };
+		4038CDE8207B605A003BD29B /* ArticleTableViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4038CDE7207B605A003BD29B /* ArticleTableViewFooter.swift */; };
 		40C4B9C72076760600694310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C62076760600694310 /* AppDelegate.swift */; };
 		40C4B9C92076760600694310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C4B9C82076760600694310 /* ViewController.swift */; };
 		40C4B9CC2076760600694310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C4B9CA2076760600694310 /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		1F2E0CD42079678E0027D5C3 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		1F2E0CD6207967AF0027D5C3 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		1F2E0CD820797DD60027D5C3 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		4038CDE5207B600A003BD29B /* ArticleTableViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewFooter.xib; sourceTree = "<group>"; };
+		4038CDE7207B605A003BD29B /* ArticleTableViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewFooter.swift; sourceTree = "<group>"; };
 		40C4B9C32076760600694310 /* FemininBio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FemininBio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C4B9C62076760600694310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C4B9C82076760600694310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				1F2E0CD42079678E0027D5C3 /* ArticleTableViewCell.swift */,
 				1F2E0CD6207967AF0027D5C3 /* ArticleTableViewCell.xib */,
+				4038CDE7207B605A003BD29B /* ArticleTableViewFooter.swift */,
+				4038CDE5207B600A003BD29B /* ArticleTableViewFooter.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2E0CD7207967AF0027D5C3 /* ArticleTableViewCell.xib in Resources */,
+				4038CDE6207B600A003BD29B /* ArticleTableViewFooter.xib in Resources */,
 				40C4B9D12076760700694310 /* LaunchScreen.storyboard in Resources */,
 				40C4B9FE2076799D00694310 /* Configuration.plist in Resources */,
 				40C4B9CE2076760600694310 /* Assets.xcassets in Resources */,
@@ -576,6 +583,7 @@
 				1F2E0CD52079678E0027D5C3 /* ArticleTableViewCell.swift in Sources */,
 				40C4BA0220767BAF00694310 /* ConfigurationHelper.swift in Sources */,
 				40C4BA0420767C3400694310 /* ArticleModel.swift in Sources */,
+				4038CDE8207B605A003BD29B /* ArticleTableViewFooter.swift in Sources */,
 				40C4BA122077A1AC00694310 /* ArticleDetailsViewController.swift in Sources */,
 				40C4B9C92076760600694310 /* ViewController.swift in Sources */,
 				40C4BA0C20776EBA00694310 /* GlobalHelper.swift in Sources */,

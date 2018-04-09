@@ -34,10 +34,12 @@ class ArticleDetailsViewController: UIViewController {
         getArticleById()
 
     }
+    /// get articles by Id
     func getArticleById() {
         self.activityIndicator.startAnimating()
         articleClient.getArticleDetails(articleDetails: articleDetails, isSuccess: isSuccess, articleId: idArticle!)
     }
+    /// add observer on the article
     func addObserverOnArticleDetails(){
         self.articleDetails.asObservable().subscribe(onNext: { (articleReturned) in
             self.setupView()
@@ -46,6 +48,7 @@ class ArticleDetailsViewController: UIViewController {
 
         }).disposed(by: disposeBag)
     }
+    /// setup View
     func setupView() {
         titleLabel.text = articleDetails.value.titre
         if let url = articleDetails.value.image?.url {

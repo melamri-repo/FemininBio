@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 class GlobalHelper {
     static var sharedInstance = GlobalHelper()
+    /// format Date from seconds to String with Format : HH:mm dd.MM.yyyy
+    ///
+    /// - Parameter numberOfSeconds: <#numberOfSeconds description#>
+    /// - Returns: <#return value description#>
     func formatDate(withTimeStamp numberOfSeconds: Int) -> String {
         let timestamp = numberOfSeconds != 0 ? Int(numberOfSeconds) : Int(0.0)
         let timeInterval: TimeInterval = CDouble(timestamp)
@@ -21,15 +25,25 @@ class GlobalHelper {
         dateformatter.dateFormat = format
         return dateformatter.string(from: date)
     }
+    /// UIImage from URL
+    ///
+    /// - Parameter urlString: <#urlString description#>
+    /// - Returns: <#return value description#>
     func imageFromUrl(urlString: String) -> UIImage {
         var image = UIImage()
         if let url = URL(string: urlString) {
             if let data = try? NSData(contentsOf: url) as Data {
-                image = UIImage(data: data)!
+                if let img = UIImage(data: data) {
+                    image = img
+                }
             }
         }
         return image
     }
+    /// AttributedString from HTML
+    ///
+    /// - Parameter string: <#string description#>
+    /// - Returns: <#return value description#>
     func stringFromHtml(string: String) -> NSAttributedString? {
         do {
             let data = string.data(using: String.Encoding.utf8, allowLossyConversion: true)

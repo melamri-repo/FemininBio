@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,28 +45,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Nom de l'auteur..." translatesAutoresizingMaskIntoConstraints="NO" id="5cv-3W-Gkt">
-                                <rect key="frame" x="0.0" y="69" width="375" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="JLQ-Vg-JtL"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pKy-Lk-cIW">
-                                <rect key="frame" x="47" y="129" width="281" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="zFN-9E-Seg"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Tous"/>
-                                    <segment title="Rubrique"/>
-                                    <segment title="Thème"/>
-                                </segments>
-                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ynQ-sb-4mo">
-                                <rect key="frame" x="0.0" y="177" width="375" height="490"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pas d'information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8d-9n-Gh5">
+                                <rect key="frame" x="120.5" y="355" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lOs-LJ-xKU">
                                 <rect key="frame" x="169" y="347" width="37" height="37"/>
                                 <color key="color" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,21 +66,17 @@
                             <constraint firstItem="ynQ-sb-4mo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AO8-bf-ZOe"/>
                             <constraint firstItem="lOs-LJ-xKU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="APX-9P-FwF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ynQ-sb-4mo" secondAttribute="bottom" id="EPl-3u-3BG"/>
-                            <constraint firstItem="pKy-Lk-cIW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FiI-Nb-Pdh"/>
-                            <constraint firstItem="pKy-Lk-cIW" firstAttribute="top" secondItem="5cv-3W-Gkt" secondAttribute="bottom" constant="20" id="NPl-wA-hKQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ynQ-sb-4mo" secondAttribute="trailing" id="Rbd-93-bxf"/>
-                            <constraint firstItem="pKy-Lk-cIW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="3:4" id="Vt4-GY-H81"/>
-                            <constraint firstItem="ynQ-sb-4mo" firstAttribute="top" secondItem="pKy-Lk-cIW" secondAttribute="bottom" constant="20" id="Xdc-XU-xwo"/>
-                            <constraint firstItem="5cv-3W-Gkt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="dWW-vb-IWH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5cv-3W-Gkt" secondAttribute="trailing" id="xGr-xt-6iG"/>
-                            <constraint firstItem="5cv-3W-Gkt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xjP-nl-zqW"/>
+                            <constraint firstItem="t8d-9n-Gh5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eQl-P1-amv"/>
+                            <constraint firstItem="ynQ-sb-4mo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eSN-8P-i71"/>
+                            <constraint firstItem="t8d-9n-Gh5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rjA-5m-4px"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wCW-zg-xHd"/>
                     <connections>
                         <outlet property="activityIndicator" destination="lOs-LJ-xKU" id="1S1-YN-yvC"/>
-                        <outlet property="searchBar" destination="5cv-3W-Gkt" id="hx2-9c-hs7"/>
+                        <outlet property="noDataLabel" destination="t8d-9n-Gh5" id="aIB-1G-x5o"/>
                         <outlet property="tableView" destination="ynQ-sb-4mo" id="qSO-QC-ojV"/>
                     </connections>
                 </viewController>
@@ -118,8 +101,8 @@
                                             <constraint firstAttribute="width" secondItem="uAx-2U-G3d" secondAttribute="height" multiplier="16:9" id="c23-rL-GwF"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sur-titre" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unN-so-MM6" userLabel="Sous titre">
-                                        <rect key="frame" x="20" y="151.5" width="345" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unN-so-MM6" userLabel="Sous titre">
+                                        <rect key="frame" x="20" y="201" width="345" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                         <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -138,8 +121,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titre" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td6-fC-7Nx" userLabel="TitleLable">
-                                        <rect key="frame" x="20" y="185" width="345" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td6-fC-7Nx" userLabel="TitleLable">
+                                        <rect key="frame" x="20" y="211" width="345" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.97945481540000001" green="0.97398453949999997" blue="0.9698926806" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
@@ -158,26 +141,26 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auteur" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-VJ-eRH" userLabel="Auteur">
-                                        <rect key="frame" x="20" y="231" width="40" height="16.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yih-VJ-eRH" userLabel="Auteur">
+                                        <rect key="frame" x="20" y="231" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-E6-0Ek" userLabel="Date">
-                                        <rect key="frame" x="326.5" y="231.5" width="28.5" height="16.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-E6-0Ek" userLabel="Date">
+                                        <rect key="frame" x="355" y="231" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accroche" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-Fp-DYy" userLabel="Accroche">
-                                        <rect key="frame" x="10" y="277.5" width="355" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-Fp-DYy" userLabel="Accroche">
+                                        <rect key="frame" x="10" y="261" width="355" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GZ-oH-qtg" userLabel="body">
-                                        <rect key="frame" x="10" y="337.5" width="355" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GZ-oH-qtg" userLabel="body">
+                                        <rect key="frame" x="10" y="301" width="355" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

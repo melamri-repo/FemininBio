@@ -34,13 +34,14 @@ class ArticleClient {
         }).disposed(by: disposeBag)
     }
     func getArticlesByPage(articles: BehaviorRelay<[ArticleModel]>, isSuccess: BehaviorRelay<(Bool,String)>,pageNumber: Int) {
-        let dataSource = ConfigurationHelper.getConfigForKey(key: "listeArticleURL").replacingOccurrences(of: "{page}", with: String(pageNumber))
-        
+        let dataSource = ConfigurationHelper.getConfigForKey(key: "listeArticleByPageURL").replacingOccurrences(of: "{page}", with: String(pageNumber))
+        var articlesList = articles.value
         RxAlamofire.requestData(.get, dataSource).debug().subscribe(onNext: { (response, data) in
             if 200..<300 ~= response.statusCode {
                 do {
                     let array = try JSONDecoder().decode([ArticleModel].self, from: data)
-                    articles.accept(array)
+                    articlesList.append(contentsOf: array)
+                    articles.accept(articlesList)
                     isSuccess.accept((true, ""))
                 } catch let error as DecodingError {
                     isSuccess.accept((false, error.localizedDescription))
