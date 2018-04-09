@@ -2,7 +2,7 @@
 //  ArticleTableViewCell.swift
 //  FemininBio
 //
-//  Created by cluster SIG on 07/04/2018.
+//  Created by Mouna EL AMRI on 09/04/2018.
 //  Copyright © 2018 Mouna EL AMRI. All rights reserved.
 //
 

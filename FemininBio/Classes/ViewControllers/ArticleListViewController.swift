@@ -13,23 +13,42 @@ import RxCocoa
 
 class ArticleListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var noDataLabel: UILabel!
     // MARK: -Rx Variables
     var disposeBag = DisposeBag()
     var isSuccess: BehaviorRelay<(Bool,String)> = BehaviorRelay(value: (false,""))
     var articles: BehaviorRelay<[ArticleModel]> = BehaviorRelay(value: [ArticleModel]())
     // MARK: Variables
     let articleClient = ArticleClient()
+    var pageNumber: Int = 0
+    var isMoreNews: Bool = false
+    var articleList: [ArticleModel] = []
     private let tableViewRefreshControl = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        setupNagivationItem()
         initTableView()
+        // Register notifications
+        registerObservers()
+        // Rx Functions
         addObserverOnArticles()
         getArticles()
         bindArticles()
         didSelectAtArticleRow()
+    }
+    /// Register observers
+    func registerObservers() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "loadMoreNews"), object: nil, queue: nil) { (notification) in
+            self.activityIndicator.startAnimating()
+            self.isMoreNews = true
+            self.articleClient.getArticlesByPage(articles: self.articles, isSuccess: self.isSuccess, pageNumber: self.pageNumber+1)
+        }
+    }
+    /// set navigation settings
+    func setupNagivationItem() {
+        self.navigationItem.title = "A la une"
     }
     /// Init the tableview
     private func initTableView() {
@@ -48,6 +67,13 @@ class ArticleListViewController: UIViewController, UITableViewDelegate {
             .disposed(by: disposeBag)
         // Do not set datasource to prevent xcode from crashing
     }
+    /// setup footer when articles is not empty
+    func setupFooterWhenData() {
+        // Custom Footer
+        let footerView = Bundle.main.loadNibNamed("ArticleTableViewFooter", owner: self, options: nil)![0] as! ArticleTableViewFooter
+        footerView.frame = CGRect(x: 0, y: tableView.frame.size.height - 20, width: tableView.frame.size.width, height: 20)
+        self.tableView.tableFooterView = footerView
+    }
     /// Refresh List of Velib
     @objc private func refreshList() {
         getArticles()
@@ -57,16 +83,21 @@ class ArticleListViewController: UIViewController, UITableViewDelegate {
         self.activityIndicator.startAnimating()
         articleClient.getArticles(articles: articles, isSuccess: isSuccess)
     }
-    /// add observer on article lists : filtred and not filtred
+    /// add observer on article lists
     func addObserverOnArticles() {
         self.articles.asObservable().subscribe(onNext: { (articlesReturned) in
-            self.tableView.reloadData()
-            self.tableViewRefreshControl.endRefreshing()
-            // show noDataLabel depending on filtredStands count
+            // show noDataLabel depending on articles count
             if self.articles.value.isEmpty {
                 //self.noDataLabel.isHidden = false
             } else {
                 //self.noDataLabel.isHidden = true
+                self.setupFooterWhenData()
+            }
+            self.tableView.reloadData()
+            self.tableViewRefreshControl.endRefreshing()
+            if self.isMoreNews {
+                self.isMoreNews = false
+                self.pageNumber += 1
             }
             self.activityIndicator.stopAnimating()
         }, onError: { (_) in
